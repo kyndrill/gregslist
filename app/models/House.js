@@ -22,7 +22,8 @@ export class House {
 
   get HouseCard() {
     return `
-  <div class="col-3 m-5 house-card shadow fw-bold">
+  <div class="col-3 m-5 house-card shadow fw-bold d-flex flex-column justify-content-between">
+  <div>
     <div class="m-3">
       <img
         src="${this.imgUrl}"
@@ -47,6 +48,10 @@ export class House {
       <p>Location: ${this.location}</p>
       <p>Description: ${this.description}</p>
     </div>
+    </div>
+    <div class="d-flex justify-content-end align-items-end m-3">
+        <button onclick="" class="btn delete-house-button">Delete House</button>
+      </div>
   </div>`
 
   }

@@ -68,3 +68,12 @@ p {
   margin-right: 25px;
   border: 2px solid var(--home-theme-color)
 }
+
+.rooms-input {
+  width: 80%;
+}
+
+.delete-house-button {
+  background-color: var(--home-theme-color-4);
+  color: var(--home-theme-color);
+}
