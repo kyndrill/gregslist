@@ -1,4 +1,5 @@
 import { Car } from "./models/Car.js"
+import { House } from "./models/House.js"
 import { Value } from "./models/Value.js"
 import { EventEmitter } from "./utils/EventEmitter.js"
 import { isValidProp } from "./utils/IsValidProp.js"
@@ -38,6 +39,44 @@ class ObservableAppState extends EventEmitter {
       description: 'The fastest car in Gran Turismo 2 on Playstation'
     }),
   ]
+
+  /**
+   * @type {House[]}
+   */
+  houses = [
+    new House({
+      year: 1983,
+      name: "Cozy Bungalow",
+      bedrooms: 2,
+      bathrooms: 1,
+      hasGarage: false,
+      hasBasement: false,
+      hasHoA: false,
+      sqft: 1200,
+      price: 400000,
+      location: "Ashland, Oregon",
+      description: "This cozy bungalow stays cool in the summer and warm in the winter.  Enjoy the warm fireplace!",
+      imgUrl: 'https://plus.unsplash.com/premium_photo-1663099373746-703d6504d265?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2086&q=80'
+    }),
+    new House({
+      year: 2000,
+      name: "Amazing Investment!",
+      bedrooms: 6,
+      bathrooms: 3.5,
+      hasGarage: true,
+      hasBasement: true,
+      hasHoA: false,
+      sqft: 3200,
+      price: 1300000,
+      location: "Astoria, Oregon",
+      description: "Impeccably designed home for a large family, with spacious downstairs and large deck overlooking the Columbia River.",
+      imgUrl: 'https://images.unsplash.com/photo-1607314595821-d8a8f4c2c5fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80'
+    }),
+  ]
+
+
+
+
 
   // NOTE Used to load initial data
   init() {

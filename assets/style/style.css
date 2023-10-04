@@ -1,33 +1,70 @@
 /* BASIC STYLES HERE */
+:root {
+  --home-theme-color: #FFF2D8;
+  --home-theme-color-2: #EAD7BB;
+  --home-theme-color-3: #BCA37F;
+  --home-theme-color-4: #113946;
+}
 
-label{
+
+label {
   display: block;
 }
 
-input{
+input {
   width: 100%;
 }
 
-textarea{
+textarea {
   width: 50%;
 }
 
-.checkbox{
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.checkbox {
   width: auto;
 }
 
-.color{
+.color {
   width: 10vw;
 
 }
 
-.car-img{
+.car-img {
   height: 40vh;
   width: 30%;
   object-fit: cover;
 }
 
-.car-border{
+.car-border {
   border-style: solid;
   border-width: 5px;
+}
+
+.house-img {
+  height: 30vh;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+.house-card {
+  border: 2px solid black;
+  background-color: #BCA37F;
+  color: #113946;
+  border-radius: 5%;
+}
+
+.house-font {
+  font-family: 'Nunito', sans-serif;
+}
+
+.house-small-box {
+  background-color: #EAD7BB;
+  border-radius: 5%;
+  margin-right: 25px;
+  border: 2px solid var(--home-theme-color)
 }
